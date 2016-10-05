@@ -4,7 +4,7 @@ public abstract class ProfessionalAthletes
 	protected String name;
 	protected String sport;
 	protected int age;
-	protected int height;
+	protected String height;
 	
 	public abstract void makeMoney();
 	
@@ -14,6 +14,11 @@ public abstract class ProfessionalAthletes
 	
 	public void getSponsored()	
 		{
-		System.out.println("As a professional athlete, they have received numerous sponsorship deals from major companies as a result of their success in their sport.");
+		System.out.println("As a professional athlete, he has received numerous sponsorship deals from major companies as a result of their success in his sport.");
+		}
+	
+	public void stats()
+		{
+		System.out.println(name + " is " + age + " years old and " + height + " tall.");	
 		}
 	}
