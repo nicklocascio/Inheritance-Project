@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Runner
+class Runner
 	{
 	public static void main(String[] args)
 		{
@@ -9,14 +9,18 @@ public class Runner
 		athletes.add(new Skateboarder());
 		athletes.add(new Snowboarder());
 		athletes.add(new FootballPlayer());
+		athletes.add(new BasketballPlayer());
 		
-		for(int i = 0; i < athletes.size(); i++)
+		for(ProfessionalAthletes a : athletes)
 			{
-			athletes.get(i).stats();
-			athletes.get(i).getSponsored();
-			athletes.get(i).makeMoney();
-			athletes.get(i).train();
-			athletes.get(i).injuries();	
+			a.stats();
+			a.represents();
+			a.getSponsored();
+			a.makeMoney();
+			a.train();
+			a.tricks();
+			a.plays();
+			a.injuries();
 			System.out.println("");
 			}
 		}
